@@ -51,6 +51,7 @@ $(document).ready(function () {
 
     $('.table-wrapper').scrollbar();
     $('.faq-wrap').scrollbar();
+    $('.lk-codes-wrapper').scrollbar();
 
     function maskInit() {
         $(".phone-mask").inputmask({
