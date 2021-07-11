@@ -830,6 +830,7 @@ footer .container {
 
 .main-page,
 .inner-page {
+    position: relative;
     background: #00155B;
     padding-bottom: 120rem;
 }
@@ -1444,6 +1445,15 @@ footer .container {
     color: #FDF100;
 }
 
+.lk-codes-announce {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 28rem;
+    line-height: 1;
+    text-align: center;
+    margin: 40rem auto 80rem;
+}
+
 .lk-codes-wrapper {
     width: 100%;
     height: 550rem;
@@ -1796,6 +1806,75 @@ footer .container {
     margin-bottom: 100px;
 }
 
+.product-page .container {
+    max-width: 1420rem;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20rem;
+}
+
+.product {
+    width: 410rem;
+    margin: 30rem 25rem 50rem;
+}
+
+.product-img {
+    position: relative;
+    max-width: 410rem;
+    width: 100%;
+    height: 190rem;
+    margin: 0 auto;
+}
+
+.product-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 299rem;
+    height: 297rem;
+    background: url(../img/halls-bg.png) center no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.product-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.product-name {
+    position: relative;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 24rem;
+    line-height: 29rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2.72618rem 2.72618rem 0rem #063485;
+    margin-bottom: 5rem;
+}
+
+.product-weight {
+    position: relative;
+    font-style: italic;
+    font-size: 19rem;
+    line-height: 1;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 2.72618rem 2.72618rem 0rem #063485;
+}
 
 
 
@@ -1931,58 +2010,6 @@ table td:first-child {
 
 table td:nth-child(3) {
    min-width: 140rem;
-}
-
-.product-page {
-    min-height: 940rem;
-}
-
-.product-slider {
-    margin-top: 120rem;
-}
-
-.product-img {
-    max-width: 411rem;
-    width: 100%;
-    margin: 0 auto 20rem;
-    padding: 40rem 0;
-}
-
-.product-name {
-    font-style: italic;
-    font-size: 40rem;
-    line-height: 48rem;
-    text-align: center;
-    text-transform: uppercase;
-    transform: skewX(-8deg);
-    margin-bottom: 20rem;
-}
-
-.product-weight {
-    font-style: italic;
-    font-size: 32rem;
-    line-height: 38rem;
-    text-align: center;
-    color: #FFE500;
-    transform: skewX(-8deg);
-}
-
-.product-slider .slick-arrow {
-    width: 42rem;
-    height: 133rem;
-    background: none;
-}
-
-.product-slider .slick-prev {
-    left: -30rem;
-    background: url(../img/arrow-left.svg) center no-repeat;
-    background-size: contain;
-}
-
-.product-slider .slick-next {
-    right: -30rem;
-    background: url(../img/arrow-right.svg) center no-repeat;
-    background-size: contain;
 }
 
 .main-page .title {
@@ -2873,6 +2900,12 @@ table td:nth-child(3) {
         color: #FFFFFF;
     }
 
+    .lk-codes-announce {
+        font-size: 16px;
+        line-height: 1;
+        margin: 30px auto;
+    }
+
     .lk-codes-wrapper {
         height: 595px;
         margin: 20px auto 0;
@@ -3080,50 +3113,43 @@ table td:nth-child(3) {
         max-width: 140px;
     }
 
-    .product-page {
-        min-height: auto;
+    .product-page .container {
+        max-width: 375px;
     }
 
-    .product-slider {
-        margin-top: 50px;
+    .products {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 20px auto 50px;
     }
 
     .product-img {
         max-width: 300px;
-        margin-bottom: 20px;
-        padding: 20px 0;
+        height: 115px;
+    }
+
+    .product-img::before {
+        width: 180px;
+        height: 179px;
     }
 
     .product-name {
-        font-size: 16px;
-        line-height: 19px;
-        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 22px;
+        text-shadow: 2px 2px 0px #063485;
+        margin-bottom: 5px;
     }
 
     .product-weight {
         font-size: 14px;
-        line-height: 17px;
-    }
-
-    .product-img,
-    .product-name,
-    .product-weight {
-        max-width: 240px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .product-slider .slick-arrow {
-        width: 16px;
-        height: 51px;
-    }
-
-    .product-slider .slick-prev {
-        left: -10px;
-    }
-
-    .product-slider .slick-next {
-        right: -10px;
+        text-shadow: 2px 2px 0px #063485;
     }
 
     .input-field-double {
