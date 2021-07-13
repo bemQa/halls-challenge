@@ -1876,89 +1876,192 @@ footer .container {
     text-shadow: 2.72618rem 2.72618rem 0rem #063485;
 }
 
+.winners-title {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 40rem;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FDF100;
+}
 
+.winners-announce {
+    max-width: 550rem;
+    width: 100%;
+    margin: 70rem auto 170rem;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 28rem;
+    line-height: 1;
+    text-align: center;
+}
 
+.filters {
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    max-width: 1160rem;
+    width: 100%;
+    margin: 80rem auto 50rem;
+}
 
-.phone-filter {
-    max-width: 500rem;
-    margin: 30rem auto 40rem;
+.date-filter {
+    position: relative;
+    max-width: 280rem;
+    width: 100%;
+    /*transform: skewX(-8deg);*/
+}
+
+.date-filter .select {
+    min-width: 240rem;
+}
+
+.date-filter .select2-container--below {
+    z-index: 3;
+}
+
+.date-filter .select2.select2-container {
+    padding: 20rem 10rem 20rem 35rem;
+    background: #84C4F0;
     transform: skewX(-8deg);
 }
 
-.phone-filter.input-field input:not([type="checkbox"]) {
-    transform: none;
-    padding-left: 30rem;
+.date-filter .select2.select2-container--open {
+    border-radius: 0;
+}
+
+.date-filter .select2.select2-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20rem;
+    bottom: 0;
+    width: 29rem;
+    height: 24rem;
+    margin: auto;
+    background: url(../img/calendar-icon.svg) center no-repeat;
+    background-size: contain;
+    transform: skewX(8deg);
+}
+
+.date-filter .select2-container .select2-selection--single {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 0;
+    width: 100%;
+    height: 20rem;
+    padding: 0 20rem 0 20rem;
+    border: 0;
+    border-bottom: 0;
+    box-shadow: none;
+}
+
+.date-filter .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18rem;
+    color: #fff;
+}
+
+.date-filter .select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding-right: 0;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18rem;
+    color: #fff;
+}
+
+.date-filter .select2-container--open.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #fff;
+}
+
+.date-filter .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 0;
+    right: 20rem;
+    width: 24rem;
+    height: 14rem;
+    transition: all .2s linear;
+}
+
+.date-filter .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: none;
+    width: 24rem;
+    height: 14rem;
+    background: url(../img/arrow-down-date.svg) center no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+
+.date-filter .select2-container--open .select2-dropdown--below {
+    padding-top: 0;
+    top: 0;
+    border: transparent;
+    border-radius: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.date-filter .select2-results__option {
+    position: relative;
+    font-weight: normal;
+    font-size: 14rem;
+    text-align: center;
+    height: 30rem;
+    padding: 10rem;
+}
+
+.date-filter .select2-results__options {
+    font-size: 14rem;
+}
+
+.date-filter .select2-container--default .select2-results>.select2-results__options {
+    padding-top: 0;
+}
+
+.phone-filter {
+    max-width: 400rem;
+    margin: 0;
+}
+
+.phone-filter input:not([type="checkbox"]) {
+    height: 60rem;
+    padding-left: 80rem;
+    transform: skewX(-8deg);
 }
 
 .search {
     position: absolute;
     top: 0;
-    right: 10rem;
+    left: 0;
     bottom: 0;
-    width: 75rem;
-    height: 75rem;
+    width: 60rem;
+    height: 60rem;
     margin: auto;
-    background: #ED1B31 url(../img/search.svg) center no-repeat;
-    background-size: 47rem;
-}
-
-.tabs {
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 80rem;
+    background: url(../img/search.svg) center no-repeat #84C4F0;
+    background-size: auto;
+    transition: all .2s linear;
     transform: skewX(-8deg);
 }
 
-.tab {
+.winners {
     position: relative;
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: center;
-    font-style: italic;
-    font-size: 23rem;
-    line-height: 27rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: #62BB46;
-    width: 220rem;
-    height: 85rem;
-    margin: 0 2rem;
-    padding: 10rem;
-    background: #fff;
-    box-shadow: 1.88217rem 1.88217rem 0rem #000;
-    transition: all .2s linear;
-    cursor: pointer;
-}
-
-.tab:not(.active):hover,
-.tab.active {
-    color: #009640;
-    background: #FFE500;
-}
-
-.tab.disabled {
-    pointer-events: none;
-    background: #C2C2C2;
-    color: #000;
-}
-
-.tabs-content {
-    min-height: 450rem;
-}
-
-.tab-item {
-    display: none;
-}
-
-.tab-item.active {
-    display: block;
+    max-width: 1160rem;
+    width: 100%;
+    min-height: 420rem;
+    margin: 0 auto 40rem;
 }
 
 .table-wrapper {
-    max-width: 1360rem;
+    max-width: 1160rem;
     width: 100%;
     max-height: 450rem;
     margin: auto;
@@ -1978,7 +2081,6 @@ table th {
     font-weight: normal;
     font-size: 20rem;
     line-height: 1.15;
-    letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #fff;
     text-align: left;
@@ -1987,17 +2089,15 @@ table th {
 
 table tbody {
     font-style: italic;
-    font-weight: normal;
-    font-size: 26rem;
+    font-weight: 500;
+    font-size: 18rem;
     line-height: 1;
-    letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: #FFE500;
     text-align: left;
 }
 
 table td {
-    padding: 17rem 20rem 17rem 0;
+    padding: 10rem 20rem 10rem 0;
     min-width: 190rem;
 }
 
@@ -2009,8 +2109,169 @@ table td:first-child {
 }
 
 table td:nth-child(3) {
-   min-width: 140rem;
+   min-width: 160rem;
 }
+
+table .prize-td {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    min-width: 310rem;
+}
+
+.winners-prize {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 72rem;
+    height: 71rem;
+    margin-right: 20rem;
+}
+
+.winners-prize::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 72rem;
+    height: 71rem;
+    background: url(../img/winner-prize-bg.png) center no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.winners-prize img {
+    position: relative;
+    max-width: 62rem;
+    transform: rotate(-5deg);
+}
+
+.winners-prize .winner-main-prize {
+    margin-left: auto;
+}
+
+.winners-prize .winner-phone,
+.winners-prize .winner-cash {
+    max-width: 48rem;
+}
+
+.winners-prize .winner-airpods {
+    max-width: 42rem;
+}
+
+.winners-prize-info {
+    max-width: 220rem;
+    width: 100%;
+}
+
+.winners-prize-title {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 18rem;
+    line-height: 1;
+}
+
+.winners-challenge-slider {
+    max-width: 560rem;
+    width: 100%;
+    margin: 20rem auto 0;
+}
+
+.winner-challenge {
+    max-width: 450rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.winner-challenge-img {
+    position: relative;
+    max-width: 293rem;
+    width: 100%;
+    height: 290rem;
+    margin: 0 auto 30rem;
+}
+
+.winner-challenge-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 293rem;
+    height: 290rem;
+    background: url(../img/halls-bg.png) center no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.winner-challenge-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.winner-challenge-soc {
+    width: 57rem;
+    height: 56rem;
+    margin: 0 auto 20rem;
+}
+
+.winner-challenge-link {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 400rem;
+    margin: auto;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 41rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.winners-challenge-announce {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 28rem;
+    line-height: 1;
+    text-align: center;
+    margin-top: 50rem;
+}
+
+.winners-challenge-slider .slick-prev,
+.winners-challenge-slider .slick-next {
+    top: 350rem;
+    bottom: auto;
+    width: 23rem;
+    height: 54rem;
+}
+
+.winners-challenge-slider .slick-prev {
+    left: 0;
+    background: url(../img/arrow-left.svg) center no-repeat;
+    background-size: contain;
+}
+
+.winners-challenge-slider .slick-next {
+    right: 0;
+    background: url(../img/arrow-right.svg) center no-repeat;
+    background-size: contain;
+}
+
+
+
 
 .main-page .title {
     font-size: 98rem;
@@ -3027,90 +3288,218 @@ table td:nth-child(3) {
         height: 20px;
     }
 
+    .winners-page .title {
+        margin-bottom: 30px;
+    }
 
+    .winners-title {
+        font-size: 22px;
+    }
 
+    .filters {
+        flex-direction: column;
+        max-width: 350px;
+        margin: 20px auto 40px;
+    }
 
+    .date-filter {
+        max-width: 210px;
+        margin-bottom: 20px;
+    }
 
+    .date-filter .select {
+        min-width: 210px;
+    }
 
+    .date-filter .select2.select2-container {
+        padding: 17px 10px 15px 35px
+    }
 
+    .date-filter .select2.select2-container::before {
+        left: 20px;
+        width: 18px;
+        height: 18px;
+    }
 
+    .date-filter .select2-container .select2-selection--single {
+        height: 14px;
+        padding: 0 20px 0 10px;
+    }
 
+    .date-filter .select2-container--default .select2-selection--single .select2-selection__rendered,
+    .date-filter .select2-container--default .select2-selection--single .select2-selection__placeholder {
+        font-size: 14px;
+    }
 
+    .date-filter .select2-container--default .select2-selection--single .select2-selection__arrow {
+        right: 15px;
+        width: 16px;
+        height: 8px;
+    }
 
+    .date-filter .select2-container--default .select2-selection--single .select2-selection__arrow b {
+        width: 16px;
+        height: 8px;
+    }
 
-
-
-
-
-
-
-
-
-
+    .date-filter .select2-results__option {
+        font-size: 14px;
+        height: 30px;
+        padding: 10px;
+    }
 
     .phone-filter {
         max-width: 300px;
         margin: 20px auto;
     }
 
-    .phone-filter.input-field input:not([type="checkbox"]) {
-        padding-left: 20px;
+    .phone-filter input:not([type="checkbox"]) {
+        height: 46px !important;
+        font-size: 14px;
+        padding-left: 60px !important;
     }
 
     .search {
-        right: 5px;
-        width: 40px;
-        height: 40px;
-        background-size: 30px;
-    }
-
-    .tabs {
-        margin-bottom: 40px;
-    }
-
-    .tab {
-        font-size: 12px;
-        line-height: 14px;
-        max-width: 128px;
-        width: 100%;
+        width: 46px;
         height: 46px;
-        margin: 0 2px;
-        padding: 10px;
-        box-shadow: 1px 1px 0px #000000;
+        background-size: 16px;
     }
 
-    .tabs-content {
-        min-height: 250px;
+    .winners {
+        max-width: 350px;
+        min-height: 300px;
+        margin-bottom: 50px;
     }
 
     .table-wrapper {
-        max-width: 300px;
+        max-width: 350px;
         min-width: auto;
-        max-height: 250px;
+        max-height: 300px;
     }
 
     .table-wrapper.scroll-content {
         padding-right: 18px;
     }
 
-    table th {
-        font-size: 12px;
-        padding: 0 10px 5px 0;
-    }
-
     table tbody {
         font-size: 14px;
-        line-height: 16px;
+    }
+
+    table th,
+    table td {
+        padding: 0 10px 10px 0;
     }
 
     table td {
-        padding: 5px 10px 10px 0;
         min-width: 130px;
-        vertical-align: bottom;
     }
 
-    table td:first-child {
-        max-width: 140px;
+    table .mobile-visible,
+    .prize-td {
+        display: table-cell;
+    }
+
+    .winners-date {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 1;
+        color: #84C4F0;
+        margin-bottom: 5px;
+    }
+
+    .winners-name {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 130px;
+        margin-bottom: 5px;
+    }
+
+    table .prize-td {
+        display: flex;
+        min-width: 190px;
+        max-width: 190px;
+        padding-right: 0;
+    }
+
+    .winners-prize {
+        width: 72px;
+        height: 71px;
+        margin-right: 5px;
+    }
+
+    .winners-prize::before {
+        width: 72px;
+        height: 71px;
+    }
+
+    .winners-prize img {
+        max-width: 62px;
+    }
+
+    .winners-prize .winner-phone,
+    .winners-prize .winner-cash {
+        max-width: 48px;
+    }
+
+    .winners-prize .winner-airpods {
+        max-width: 42px;
+    }
+
+    .winners-prize-info {
+        max-width: 108px;
+    }
+
+    .winners-prize-title {
+        font-size: 14px;
+    }
+
+    .winners-challenge-slider {
+        max-width: 350px;
+        margin: 10px auto 0;
+    }
+
+    .winner-challenge {
+        max-width: 300px;
+    }
+
+    .winner-challenge-img {
+        max-width: 209px;
+        height: 207px;
+        margin-bottom: 10px;
+    }
+
+    .winner-challenge-img::before {
+        width: 209px;
+        height: 207px;
+    }
+
+    .winner-challenge-img img {
+        max-width: 170px;
+    }
+
+    .winner-challenge-soc {
+        width: 33px;
+        height: 33px;
+        margin-bottom: 12px;
+    }
+
+    .winner-challenge-link {
+        max-width: 200px;
+        font-size: 24px;
+    }
+
+    .winners-challenge-announce {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+
+    .winners-challenge-slider .slick-prev, 
+    .winners-challenge-slider .slick-next {
+        top: 250px;
+        width: 16px;
+        height: 38px;
     }
 
     .product-page .container {
@@ -3151,6 +3540,12 @@ table td:nth-child(3) {
         font-size: 14px;
         text-shadow: 2px 2px 0px #063485;
     }
+
+
+
+
+
+
 
     .input-field-double {
         margin-bottom: 10px;
@@ -3486,5 +3881,46 @@ table td:nth-child(3) {
     .profile-name {
         font-size: 20px;
         line-height: 30px;
+    }
+
+    table tbody,
+    .winners-prize-title {
+        font-size: 13px;
+    }
+
+    table td {
+        min-width: 120px;
+    }
+
+    table .prize-td {
+        min-width: 170px;
+    }
+
+    .winners-prize {
+        width: 62px;
+        height: 61px;
+        margin-right: 5px;
+    }
+
+    .winners-prize::before {
+        width: 62px;
+        height: 61px;
+    }
+
+    .winners-prize img {
+        max-width: 52px;
+    }
+
+    .winners-prize .winner-phone,
+    .winners-prize .winner-cash {
+        max-width: 38px;
+    }
+
+    .winners-prize .winner-airpods {
+        max-width: 32px;
+    }
+
+    .winners-prize-info {
+        max-width: 98px;
     }
 }

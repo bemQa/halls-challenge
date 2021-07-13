@@ -197,46 +197,14 @@ $(document).ready(function () {
         $('.tab-item').removeClass('active');
         $('.tab-item.' + tab).addClass('active');
     });
-    
-    // spin game
-    $('.spin-btn').click(function(e) {
-        e.preventDefault();
-        $(this).addClass('disabled').parent().addClass('disabled');
-        $('.spin-prize, .spin-btn-wrapper').addClass('active');
-    });
 
-    $('.product-slider').slick({
+    $('.winners-challenge-slider').slick({
         dots: false,
         arrows: true,
         infinite: true,
         speed: 300,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1000,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
-
-    $('.prizes-slider').slick({
-        dots: false,
-        arrows: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1000,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-        ]
+        slidesToShow: 1,
+        slidesToScroll: 1
     });
 
     if($('.dropify').length) {
@@ -247,50 +215,4 @@ $(document).ready(function () {
         });
     }
 
-    if($('#fresh_prizes').length) {
-        if($(window).innerWidth() <= 1000) {
-            // $('#fresh_prizes').attr({
-            //     'width': 310,
-            //     'height': 230
-            // });
-            $('#fresh_prizes_mob').tagcanvas({
-                shuffleTags: true,
-                minBrightness: 0.6,
-                shape: 'hcylinder',
-                animTiming: 'linear',
-                clickToFront: 600,
-                dragControl: 0,
-                wheelZoom: false,
-                textFont: 'AvantGardeGothicC Italic',
-                textColour: '#FFE500',
-                outlineThickness: 0,
-                outlineColour: 'transparent',
-                maxSpeed: 0.02,
-                depth: 0.4
-            });
-        } else {
-            $('#fresh_prizes').tagcanvas({
-                shuffleTags: true,
-                weight: true,
-                weightFrom: 'data-weight',
-                minBrightness: 0.6,
-                shape: 'vcylinder',
-                animTiming: 'linear',
-                clickToFront: 600,
-                dragControl: 0,
-                wheelZoom: false,
-                textFont: 'AvantGardeGothicC Italic',
-                textColour: '#FFE500',
-                outlineThickness: 0,
-                outlineColour: 'transparent',
-                maxSpeed: 0.02,
-                depth: 0.4
-            });
-        }
-    }
-
-    $('.close-football-tooltip').click(function(e) {
-        e.preventDefault();
-        $(this).parent().fadeOut();
-    });
 });
