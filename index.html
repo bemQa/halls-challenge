@@ -21,12 +21,12 @@
 <body>
 	<div class="wrapper">
 		<div class="content">
-			<header>
+			<header class="header-main">
 				<div class="menu">
-					<a href="index.html" class="logo"></a>
+					<a href="index.html" class="logo main-page-logo"></a>
 					<a href="#!" class="burger"></a>
 					<nav class="menu-links">
-						<a href="index.html" class="menu-link">
+						<a href="index.html" class="menu-link active">
 							<svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 							    <g clip-path="url(#clip0)">
 							        <path fill-rule="evenodd" clip-rule="evenodd" d="M28.5146 28.6441C28.8109 28.3802 29.0018 28.0222 29.0452 27.649L30.5172 14.9843H34.7672L21.6729 1.77357C21.4395 1.53783 21.1147 1.4072 20.762 1.4072C20.4094 1.4072 20.0543 1.53783 19.766 1.77357L3.60058 14.9843H7.85058L6.3785 27.649C6.33512 28.0222 6.44278 28.3802 6.67778 28.6441C6.91278 28.908 7.25588 29.0562 7.6316 29.0562H27.4649C27.8407 29.0562 28.2182 28.908 28.5146 28.6441ZM19.5459 11.2575L11.7242 18.2228L17.9267 25.188L25.7485 18.2228L19.5459 11.2575Z" fill="white" />
@@ -58,7 +58,7 @@
 							</svg>
 							Челлендж
 						</a>
-						<a href="product.html" class="menu-link active">
+						<a href="product.html" class="menu-link">
 							<svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 							    <g clip-path="url(#clip0)">
 							        <path d="M13.3269 7.30109L19.9483 1.40475C20.8195 0.628928 22.0858 0.628931 22.7767 1.40476L28.0274 7.30109H23.7329L22.9414 14.11H15.8389C16.5029 13.3717 16.9381 12.4693 17.043 11.5669L17.5388 7.30109H13.3269ZM28.0103 23.7901L34.6317 17.8937C35.5029 17.1179 35.6491 15.8601 34.9583 15.0842L29.7076 9.18789L28.0103 23.7901ZM21.6795 25.6769L22.2231 21.0009C22.3089 20.2626 22.5503 19.6063 22.957 18.95L23.0586 18.786H16.2039L15.4125 25.5948H11.1179L16.3686 31.4912C17.0595 32.267 18.3258 32.267 19.197 31.4912L25.8184 25.5948H21.6891L21.6795 25.6769ZM11.2081 9.18789L4.58669 15.0842C3.71546 15.8601 3.56925 17.1179 4.26012 17.8937L9.5108 23.7901L11.2081 9.18789Z" fill="white" />
@@ -139,59 +139,54 @@
 					</a>
 				</div>
 			</header>
-			<section class="inner-page product-page">
+			<section class="inner-page main-page">
 				<div class="container">
-					<div class="title">Продукты, <br>участвующие <br class="mobile-visible">в акции</div>
-					<div class="products">
-						<div class="product">
-							<div class="product-img">
-								<img srcset="img/products/1.png 1x, img/products/1@2x.png 2x" alt="">
+					<div class="main-block">
+						<div class="kv"></div>
+						<div class="kv-info">
+							<div class="main-prize-info">
+								<div class="main-prize-title">Главный приз</div>
+								<div class="main-prize-text">Halls проспонсирует <br>твой крутой момент</div>
 							</div>
-							<div class="product-name">Со вкусом колы</div>
-							<div class="product-weight">25г.</div>
-						</div>
-						<div class="product">
-							<div class="product-img">
-								<img srcset="img/products/2.png 1x, img/products/2@2x.png 2x" alt="">
+							<div class="code-block">
+								<div class="code-block-text">Код на каждой промоупаковке Halls!</div>
+								<div class="btn-wrapper main-btn-wrapper">
+									<a href="#!" class="btn pop-op" data-popup="auth">Ввести код</a>
+									<a href="#!" class="where-code-link link pop-op" data-popup="where-code">Где найти код?</a>
+								</div>
 							</div>
-							<div class="product-name">Со вкусом мёда и лимона</div>
-							<div class="product-weight">25г.</div>
 						</div>
-						<div class="product">
-							<div class="product-img">
-								<img srcset="img/products/3.png 1x, img/products/3@2x.png 2x" alt="">
+					</div>
+					<div class="steps">
+						<div class="step step1">
+							<div class="step-img">
+								<img src="img/step1.png" alt="">
 							</div>
-							<div class="product-name">Оригинальный</div>
-							<div class="product-weight">25г.</div>
-						</div>
-						<div class="product">
-							<div class="product-img">
-								<img srcset="img/products/4.png 1x, img/products/4@2x.png 2x" alt="">
+							<div class="step-num">1</div>
+							<div class="step-info">
+								<div class="step-title">Покупай <br><span>любой HALLS <br>в промоупаковке</span></div>
 							</div>
-							<div class="product-name">Colors со вкусом манго, яблока, арбуза, лесных ягод</div>
-							<div class="product-weight">25г.</div>
 						</div>
-						<div class="product">
-							<div class="product-img">
-								<img srcset="img/products/5.png 1x, img/products/5@2x.png 2x" alt="">
+						<div class="step step2">
+							<div class="step-img">
+								<img src="img/step2.png" alt="">
 							</div>
-							<div class="product-name">«Ментол экстра»</div>
-							<div class="product-weight">25г.</div>
-						</div>
-						<div class="product">
-							<div class="product-img">
-								<img srcset="img/products/6.png 1x, img/products/6@2x.png 2x" alt="">
+							<div class="step-num">2</div>
+							<div class="step-info">
+								<div class="step-title">Регистрируй <br><span>коды с упаковки</span></div>
+								<a href="#!" class="where-code-link link pop-op" data-popup="where-code">Где найти код?</a>
 							</div>
-							<div class="product-name">Со вкусом арбуза</div>
-							<div class="product-weight">25г.</div>
 						</div>
-						<div class="product">
-							<div class="product-img">
-								<img srcset="img/products/7.png 1x, img/products/7@2x.png 2x" alt="">
+						<div class="step step3">
+							<div class="step-img">
+								<img src="img/step3.png" alt="">
 							</div>
-							<div class="product-name">Со вкусом клубники</div>
-							<div class="product-weight">25г.</div>
+							<div class="step-num">3</div>
+							<div class="step-info">
+								<div class="step-title">выигрывай <br><span>крутые призы</span></div>
+							</div>
 						</div>
+						<div class="action-remark">* изображения призов могут отличаться от реальных</div>
 					</div>
 				</div>
 			</section>
@@ -354,6 +349,24 @@
 							<button class="btn">Отправить</button>
 						</div>
                     </form>
+                </div>
+            </div>
+		</div>
+		<div id="where-code" class="popup">
+			<div class="popup__wrap">
+				<a href="#!" class="close-popup js-close-popup"></a>
+                <div class="popup__inner">
+                    <div class="popup__title">Где найти <br>код?</div>
+                    <div class="where-code1">
+                    	<img src="img/where-code1.png" alt="">
+                    </div>
+                    <div class="where-code-title">в окне даты производства</div>
+                    <div class="where-code2">
+                    	<img src="img/where-code2.png" alt="">
+                    </div>
+                    <div class="btn-wrapper">
+						<a href="#!" class="btn js-close-popup">ОК</a>
+					</div>
                 </div>
             </div>
 		</div>

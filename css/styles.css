@@ -657,7 +657,6 @@ header {
     z-index: 11;
 }
 
-header ~ .main-page,
 header ~ .inner-page {
 	padding-top: 200rem;
 }
@@ -707,6 +706,10 @@ header ~ .inner-page {
 }
 
 .login-link {
+    margin-left: 188rem;
+}
+
+.auth-link {
     margin-left: 60rem;
 }
 
@@ -2395,107 +2398,223 @@ table .prize-td {
     min-height: 88rem;
 }
 
+.main-page-logo {
+    top: 15rem;
+    width: 160rem;
+    height: 160rem;
+    background: url(../img/halls-logo.png) center no-repeat;
+    background-size: contain;
+}
 
+header ~ .main-page {
+    padding-top: 100rem;
+}
 
-.main-page .title {
-    font-size: 98rem;
-    line-height: 118rem;
-    text-shadow: 6.74683rem 2.81118rem 0rem #000;
+.main-page::before {
+    top: 100rem;
+    right: -300rem;
+    filter: blur(100rem);
+}
+
+.main-page .container {
+    max-width: 1680rem;
 }
 
 .main-block {
     display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1830rem;
-    width: 100%;
-    margin: 0 auto 150rem;
-    padding: 0 15rem;
-}
-
-.main-jack {
-    position: relative;
-    max-width: 933rem;
-    width: 100%;
-    height: 680rem;
-}
-
-.main-jack img {
-    position: absolute;
-    top: -190rem;
-    left: 0;
-    max-width: 933rem;
-}
-
-.main-info {
-    display: flex;
-    flex-direction: column;
-    -ms-align-items: flex-end;
-    align-items: flex-end;
-    max-width: 885rem;
-    width: 100%;
+    margin-bottom: 140rem;
 }
 
 .kv {
-    max-width: 865rem;
+    position: relative;
+    max-width: 900rem;
     width: 100%;
-    height: 368rem;
+    height: 905rem;
+}
+
+.kv::before {
+    content: '';
+    position: absolute;
+    top: -100rem;
+    left: -130rem;
+    right: 0;
+    margin: auto;
+    width: 1436rem;
+    height: 1927rem;
+    background: url(../img/kv-light.png) center no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.kv::after {
+    content: '';
+    position: absolute;
+    top: -50rem;
+    left: -200rem;
+    right: -100rem;
+    margin: auto;
+    width: 1015rem;
+    height: 1024rem;
     background: url(../img/kv.png) center no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.kv-info {
+    position: relative;
+    width: 710rem;
+    margin-top: 120rem;
+}
+
+.main-prize-info {
+    margin-bottom: 90rem;
+}
+
+.main-prize-title {
+    position: relative;
+    margin-bottom: 25rem;
+    padding-top: 92rem;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 52rem;
+    line-height: 69rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 3.74798rem 5.62197rem 0rem #063485;
+}
+
+.main-prize-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 120rem;
+    height: 90rem;
+    background: url(../img/main-prize-icon.png) center no-repeat;
     background-size: contain;
 }
 
+.main-prize-text {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 53rem;
+    line-height: 61rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.code-block {
+    position: relative;
+}
+
+.code-block-text {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 32rem;
+    line-height: 1;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 2rem 2rem 0rem #063485;
+    margin-bottom: 30rem;
+}
+
+.main-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-btn-wrapper .btn {
+    max-width: 400rem;
+    height: 78rem;
+    margin-bottom: 35rem;
+    padding: 19rem 0;
+    font-size: 40rem;
+}
+
 .steps {
+    position: relative;
     display: flex;
     justify-content: space-between;
+    max-width: 1560rem;
     width: 100%;
-    margin-top: 45px;
-    transform: skewX(-8deg);
+    margin: 0 auto 50rem;
 }
 
 .step {
-    max-width: 300rem;
+    position: relative;
+    max-width: 430rem;
     width: 100%;
 }
 
-.step:nth-child(1) {
-    margin-top: 60px;
+.step-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 372rem;
+    width: 100%;
+    height: 270rem;
+    margin: auto;
 }
 
-.step:nth-child(2) {
-    margin-top: 30px;
+.step1 .step-img {
+    max-width: 284rem;
+}
+
+.step2 .step-img {
+    max-width: 309rem;
+}
+
+.step3 .step-img {
+    max-width: 371rem;
+}
+
+.step-num {
+    position: absolute;
+    top: 250rem;
+    left: 0;
+    width: 50rem;
+    height: 100rem;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 100rem;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #84C4F0;
+    opacity: 0.5;
+}
+
+.step-info {
+    padding-left: 80rem;
 }
 
 .step-title {
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: center;
-    max-width: 280rem;
-    width: 100%;
-    height: 56rem;
-    background: #FFE500;
     font-style: italic;
-    font-size: 34rem;
-    line-height: 1;
+    font-weight: 900;
+    font-size: 30rem;
+    line-height: 36rem;
     text-transform: uppercase;
-    color: #009640;
 }
 
-.step-text {
+.step-title span {
+    color: #84C4F0;
+}
+
+.action-remark {
+    position: absolute;
+    bottom: -100rem;
+    left: 80rem;
     font-style: italic;
-    font-size: 21rem;
-    line-height: 25rem;
-    text-align: center;
-}
+    font-weight: normal;
+    font-size: 12rem;
+    line-height: 1;
+    color: #84C4F0;
 
-.step-text a {
-    color: #FFE500;
-}
-
-.main-info .code-form {
-    transform: skewX(-8deg);
-    margin: 30rem auto 40rem 0;
 }
 
 .error-title {
@@ -3598,171 +3717,172 @@ table .prize-td {
         margin-bottom: 10px;
     }
 
-
-
-
-
-
-
-    .input-field-double {
-        margin-bottom: 10px;
+    .main-page-logo {
+        width: 207px;
+        height: 65px;
+        background: url(../img/logo.svg) center no-repeat;
+        background-size: contain;
     }
 
-    .input-field-double .input-field:first-child {
-        margin-right: 10px;
-    }
-
-    .pseudo-input {
-        font-size: 16px;
-        line-height: 19px;
-    }
-
-    .pd-title {
-        font-size: 18px;
-        line-height: 22px;
-        margin-bottom: 10px;
-    }
-
-    .upload-wrap {
-        margin: 0 auto 10px;
-    }
-
-    .upload {
-        width: 70px;
-        height: 60px;
-        margin-right: 10px;
-        border: 2px solid #fff;
-    }
-
-    .upload-text {
-        width: 180px;
-        font-size: 16px;
-        line-height: 19px;
-    }
-
-    .upload .dropify-wrapper,
-    .upload .dropify-wrapper .dropify-preview {
-        width: 70px;
-        height: 60px;
-    }
-
-    .upload .dropify-wrapper.touch-fallback {
-        height: 60px !important;
-    }
-
-    .upload .dropify-clear {
-        width: 24px;
-        height: 24px;
-    }
-
-    .upload .dropify-wrapper .dropify-message span.file-icon::before {
-        background-size: 37px;
-        width: 37px;
-        height: 60px;
-    }
-
-    .main-page .title {
-        font-size: 50px;
-        line-height: 60px;
-        text-shadow: 3px 2px 0px #000;
+    .main-page .container {
+        max-width: 375px;
     }
 
     .main-block {
         position: relative;
         flex-direction: column;
         max-width: 375px;
-        margin-bottom: 50px;
+        margin: auto;
         padding: 0 15px;
-    }
-
-    .main-jack {
-        position: absolute;
-        top: 45px;
-        max-width: 277px;
-        height: 299px;
-    }
-
-    .main-jack img {
-        position: static;
-        top: auto;
-        max-width: 100%;
-    }
-
-    .main-info {
-        -ms-align-items: center;
-        align-items: center;
-        max-width: 300px;
     }
 
     .kv {
         position: relative;
-        max-width: 267px;
-        height: 88px;
-        margin-bottom: 250px;
-        background: url(../img/kv-mob.png) center no-repeat;
-        background-size: contain;
-        order: -1;
+        max-width: 365px;
+        height: 295px;
         z-index: 1;
+    }
+
+    .kv::before {
+        top: -300px;
+        left: -240px;
+        right: 0;
+        margin: auto;
+        width: 760px;
+        height: 783px;
+        background: url(../img/kv-light-mob.png) center no-repeat;
+        background-size: contain;
+    }
+
+    .kv::after {
+        top: -50px;
+        left: -100px;
+        right: -100px;
+        margin: auto;
+        width: 365px;
+        height: 368px;
+    }
+
+    .kv-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0;
+        z-index: 1;
+    }
+
+    .code-block {
+        order: -1;
+        margin-bottom: 90px;
+    }
+
+    .code-block-text {
+        font-size: 16px;
+        line-height: 1;
+        text-align: center;
+        text-shadow: 2px 2px 0px #063485;
+        margin-bottom: 20px;
+    }
+
+    .main-btn-wrapper .btn {
+        max-width: 220px;
+        height: 40px;
+        padding: 9px 0;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .main-prize-info {
+        position: relative;
+        padding: 20px 0;
+        margin-bottom: 40px;
+    }
+
+    .main-prize-info::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -500px;
+        right: -500px;
+        bottom: 0;
+        margin: auto;
+        width: 1000px;
+        height: 100%;
+        background: #3C87CD;
+        z-index: 0
+    }
+
+    .main-prize-title {
+        margin-bottom: 30px;
+        padding-top: 0;
+        padding-left: 75px;
+        font-size: 26px;
+        line-height: 30px;
+        text-shadow: 2px 3px 0px #063485;
+    }
+
+    .main-prize-title::before {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: auto;
+        width: 64px;
+        height: 48px;
+    }
+
+    .main-prize-text {
+        position: relative;
+        font-size: 23px;
+        line-height: 31px;
     }
 
     .steps {
         flex-direction: column;
         -ms-align-items: center;
         align-items: center;
-        transform: none;
-        margin-top: 20px;
     }
 
     .step {
-        max-width: 220px;
+        max-width: 320px;
         margin: 0 auto 20px;
-        margin-bottom: 20px;
-        transform: skewX(-8deg);
     }
 
-    .step:nth-child(1),
-    .step:nth-child(2) {
-        margin-top: 0;
+    .step-img {
+        height: 218px;
+    }
+
+    .step1 .step-img {
+        max-width: 218px;
+    }
+
+    .step2 .step-img {
+        max-width: 210px;
+    }
+
+    .step3 .step-img {
+        max-width: 290px;
+    }
+
+    .step-num {
+        top: 195px;
+        width: 40px;
+        height: 76px;
+        font-size: 76px;
+    }
+
+    .step-info {
+        padding-left: 60px;
     }
 
     .step-title {
-        max-width: 196px;
-        height: 40px;
-        margin: auto;
-        font-size: 23px;
+        font-size: 22px;
+        line-height: 26px;
     }
 
-    .step-text {
-        font-size: 16px;
-        line-height: 19px;
-    }
-
-    .main-info .code-form {
-        margin: 0 auto 20px;
-    }
-
-    .fresh-block {
-        position: relative;
-    }
-
-    .fresh-block .title {
-        font-size: 40px;
-        line-height: 50px;
-        margin-bottom: 20px;
-    }
-
-    .fresh-prizes {
-        height: 1060px;
-    }
-
-    .fresh-prizes::before {
-        left: -100px;
-        right: -100px;
-        margin: auto;
-        width: 313px;
-        height: 1060px;
-        background: url(../img/collage-mob.png) center no-repeat;
-        background-size: contain;
+    .action-remark {
+        bottom: -40px;
+        left: 0;
+        font-size: 10px;
     }
 
     .error-title {
@@ -3870,5 +3990,19 @@ table .prize-td {
 
     .winners-prize-info {
         max-width: 98px;
+    }
+
+    .code-block-text {
+        font-size: 13px;
+    }
+
+    .main-prize-text {
+        font-size: 19px;
+        line-height: 26px;
+    }
+
+    .step-title {
+        font-size: 18px;
+        line-height: 22px;
     }
 }
