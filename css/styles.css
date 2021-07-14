@@ -1876,6 +1876,10 @@ footer .container {
     text-shadow: 2.72618rem 2.72618rem 0rem #063485;
 }
 
+.winners-page .title {
+    margin-bottom: 20rem;
+}
+
 .winners-title {
     font-style: italic;
     font-weight: 900;
@@ -2270,6 +2274,126 @@ table .prize-td {
     background-size: contain;
 }
 
+.prizes-page .container {
+    max-width: 1680rem;
+}
+
+.prizes-page .title {
+    margin-bottom: 60rem;
+}
+
+.prizes-title {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 40rem;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FDF100;
+}
+
+.prizes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100rem;
+}
+
+.prizes:last-child {
+    margin-bottom: 0;
+}
+
+.prize {
+    width: 500rem;
+    margin: 0 25rem;
+}
+
+.prize-img {
+    position: relative;
+    max-width: 299rem;
+    width: 100%;
+    height: 297rem;
+    margin: 0 auto;
+}
+
+.prize-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 299rem;
+    height: 297rem;
+    background: url(../img/halls-bg.png) center no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.prize-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.prize-img .main-prize {
+    width: 286rem;
+}
+
+.prize-img .phone {
+    width: 164rem;
+}
+
+.prize-img .airpods {
+    width: 155rem;
+}
+
+.prize-img .gopro {
+    width: 179rem;
+}
+
+.prize-img .cert {
+    width: 226rem;
+}
+
+.prize-img .cash {
+    width: 177rem;
+}
+
+.prize-title {
+    position: relative;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 87rem;
+    line-height: 58%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 2.736rem 2.052rem 0rem #063485;
+}
+
+.prize-title span {
+    font-size: 44rem;
+}
+
+.prize-name {
+    position: relative;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 24rem;
+    line-height: 29rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2.72618rem 2.72618rem 0rem #063485;
+}
+
+.prize .prizes-title {
+    min-height: 88rem;
+}
 
 
 
@@ -2372,175 +2496,6 @@ table .prize-td {
 .main-info .code-form {
     transform: skewX(-8deg);
     margin: 30rem auto 40rem 0;
-}
-
-.prizes {
-    position: relative;
-    margin-bottom: 100rem;
-    z-index: 1;
-}
-
-.prizes-slider {
-    /*transform: rotate(-5deg);*/
-}
-
-.prize {
-    display: flex;
-    flex-direction: column;
-    -ms-align-items: center;
-    align-items: center;
-}
-
-.prize-img {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 400rem;
-    margin: auto;
-    transform: rotate(5deg);
-}
-
-.prize1 .prize-img {
-    display: block;
-    max-width: 475rem;
-}
-
-.prize1 .prize-img svg {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto; 
-}
-
-.prize2 .prize-img {
-    max-width: 340rem;
-}
-
-.prize3 .prize-img {
-    max-width: 400rem;
-}
-
-.prize4 .prize-img {
-    max-width: 285rem;
-}
-
-.prize-name {
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: center;
-    max-width: 330rem;
-    width: 100%;
-    height: 56rem;
-    margin: auto;
-    background: #FFE500;
-    font-style: italic;
-    font-size: 31rem;
-    line-height: 1;
-    text-transform: uppercase;
-    color: #009640;
-    transform: skewX(-8deg);
-}
-
-.prize-text {
-    max-width: 300rem;
-    width: 100%;
-    margin: auto;
-    font-style: italic;
-    font-size: 22rem;
-    line-height: 27rem;
-    text-align: center;
-    transform: skewX(-8deg);
-}
-
-.superprize-block {
-    margin-bottom: 100rem;
-}
-
-.jack-superprize {
-    position: relative;
-    max-width: 744rem;
-    width: 100%;
-    height: 640rem;
-    margin: auto;
-}
-
-.jack-superprize img {
-    position: absolute;
-    max-width: 744rem;
-    bottom: 0;
-}
-
-/* Safari and Chrome */
-@-webkit-keyframes rotating {
-    from {
-        -webkit-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    to {
-        -webkit-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotating {
-    from {
-        -ms-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    to {
-        -ms-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-.lightrays {
-    position: absolute;
-    top: -220rem;
-    left: -480rem;
-    width: 1200rem;
-    height: 1200rem;
-    background: url(../img/lightrays.jpg) center no-repeat;
-    -webkit-background-size: contain;
-    background-size: contain;
-    mix-blend-mode: screen;
-    -webkit-animation: rotating 3s linear infinite;
-    -moz-animation: rotating 3s linear infinite;
-    -ms-animation: rotating 3s linear infinite;
-    -o-animation: rotating 3s linear infinite;
-    animation: rotating 3s linear infinite;
-    opacity: .6;
-}
-
-.superprize-text {
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: center;
-    max-width: 1180rem;
-    width: 100%;
-    min-height: 94rem;
-    margin: auto;
-    padding: 10rem;
-    background: #FFE500;
-    font-style: italic;
-    font-size: 31rem;
-    line-height: 37rem;
-    text-transform: uppercase;
-    color: #009640;
-    transform: skewX(-8deg);
 }
 
 .error-title {
@@ -3541,6 +3496,108 @@ table .prize-td {
         text-shadow: 2px 2px 0px #063485;
     }
 
+    .prizes-page .container {
+        max-width: 375px;
+    }
+
+    .prizes-page .title {
+        margin-bottom: 40px
+    }
+
+    .prizes-title {
+        position: relative;
+        padding: 11px 0 9px;
+        font-size: 24px;
+        line-height: 1.1;
+        letter-spacing: 0.01em;
+    }
+
+    .prizes-title::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -500px;
+        right: -500px;
+        bottom: 0;
+        margin: auto;
+        width: 1000px;
+        height: 100%;
+        background: #3C87CD;
+        z-index: 0;
+    }
+
+    .prizes-title span {
+        position: relative;
+    }
+
+    .prizes {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .prize {
+        max-width: 300px;
+        width: 100%;
+        margin: 10px auto 0;
+    }
+
+    .prize-img {
+        max-width: 243px;
+        height: 241px;
+    }
+
+    .prize-img::before {
+        width: 243px;
+        height: 241px;
+    }
+
+    .prize-img .main-prize {
+        width: 192px;
+    }
+
+    .prize-img .phone {
+        width: 124px;
+    }
+
+    .prize-img .airpods {
+        width: 110px;
+    }
+
+    .prize-img .gopro {
+        width: 135px;
+    }
+
+    .prize-img .cert {
+        width: 169px;
+    }
+
+    .prize-img .cash {
+        width: 133px;
+    }
+
+    .prize-title {
+        font-size: 60px;
+        text-shadow: 2px 1.5px 0px #063485;
+    }
+
+    .prize-title span {
+        font-size: 32px;
+    }
+
+    .prize-name {
+        min-height: 44px;
+        font-size: 18px;
+        line-height: 22px;
+        text-shadow: 2px 2px 0px #063485;
+    }
+
+    .prize .prizes-title {
+        min-height: auto;
+        margin-bottom: 10px;
+    }
+
 
 
 
@@ -3682,115 +3739,6 @@ table .prize-td {
 
     .main-info .code-form {
         margin: 0 auto 20px;
-    }
-
-    .prizes {
-        margin-bottom: 50px;
-    }
-
-    .prizes-slider {
-        transform: none;
-    }
-
-    .prize {
-        padding: 10px 0;
-    }
-
-    .prize-img {
-        height: 300px;
-        transform: none;
-    }
-
-    .prize1 .prize-img {
-        max-width: 297px;
-    }
-
-    .prize2 .prize-img {
-        max-width: 250px;
-    }
-
-    .prize3 .prize-img {
-        max-width: 280px;
-    }
-
-    .prize4 .prize-img {
-        max-width: 190px;
-    }
-
-    .prize-name {
-        max-width: 262px;
-        height: 46px;
-        font-size: 24px;
-        transform: skewX(-8deg);
-    }
-
-    .prize-text {
-        max-width: 250px;
-        font-size: 16px;
-        line-height: 19px;
-        transform: skewX(-8deg);
-    }
-
-    .prizes-slider .slick-arrow {
-        width: 16px;
-        height: 51px;
-        background: none;
-    }
-
-    .prizes-slider .slick-prev {
-        left: 0;
-        background: url(../img/arrow-left.svg) center no-repeat;
-        background-size: contain;
-    }
-
-    .prizes-slider .slick-next {
-        right: 0;
-        background: url(../img/arrow-right.svg) center no-repeat;
-        background-size: contain;
-    }
-
-    .superprize-block {
-        margin-bottom: 50px;
-    }
-
-    .jack-superprize {
-        max-width: 332px;
-        height: 320px;
-    }
-
-    .jack-superprize img {
-        max-width: 332px;
-    }
-
-    .lightrays {
-        top: -95px;
-        left: -250px;
-        width: 600px;
-        height: 600px;
-    }
-
-    .superprize-text {
-        position: relative;
-        max-width: 510px;
-        min-height: 84px;
-        padding: 10px;
-        font-size: 14px;
-        line-height: 17px;
-        text-align: center;
-    }
-
-    .superprize-text::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100px;
-        right: -100px;
-        bottom: 0;
-        margin: auto;
-        width: 510px;
-        height: 100%;
-        background: #FFE500;
-        z-index: -1;
     }
 
     .fresh-block {
