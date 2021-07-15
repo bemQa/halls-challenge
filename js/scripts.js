@@ -207,12 +207,47 @@ $(document).ready(function () {
         slidesToScroll: 1
     });
 
-    if($('.dropify').length) {
-        $('.dropify').dropify({
-            tpl: {
-                clearButton: '<button type="button" class="dropify-clear">X</button>'
+    $('.challenge-slider').slick({
+        lazyLoad: 'ondemand',
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1366,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+    if($('.challenge-video').length) {
+        $('.video-overlay').click(function() {
+            var overlay = $(this);
+            var vid = overlay.next('.challenge-video').get(0);
+            vid.volume = 0.1;
+
+            play(overlay, vid);
+
+            function play(overlay, vid) { 
+                if (vid.paused){
+                    vid.play(); 
+                    overlay.addClass('o');
+                } else {
+                    vid.pause(); 
+                    overlay.removeClass('o');
+                }
             }
         });
     }
-
 });

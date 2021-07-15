@@ -2614,7 +2614,447 @@ header ~ .main-page {
     font-size: 12rem;
     line-height: 1;
     color: #84C4F0;
+}
 
+.challenge-page .container {
+    max-width: 1750rem;
+}
+
+.challenge-page .title {
+    margin-bottom: 30rem;
+}
+
+.challenge-links-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 500rem;
+    width: 100%;
+    margin: 20rem auto 0;
+}
+
+.challenge-links-block a {
+    margin: auto;
+}
+
+.challengers-link {
+    text-decoration-style: dashed;
+}
+
+.challenge-title {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 40rem;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FDF100;
+}
+
+.steps-challenge {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1560rem;
+    width: 100%;
+    margin: 70rem auto 90rem;
+}
+
+.step-challenge {
+    position: relative;
+    max-width: 430rem;
+    width: 100%;
+}
+
+.step-challenge-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 372rem;
+    width: 100%;
+    height: 270rem;
+    margin: auto;
+}
+
+.step-challenge1 .step-challenge-img {
+    max-width: 258rem;
+}
+
+.step-challenge2 .step-challenge-img {
+    max-width: 408rem;
+}
+
+.step-challenge3 .step-challenge-img {
+    max-width: 288rem;
+    margin-right: 30rem;
+}
+
+.step-challenge4 .step-challenge-img {
+    max-width: 226rem;
+}
+
+.step-challenge-num {
+    position: absolute;
+    top: 230rem;
+    left: 0;
+    width: 50rem;
+    height: 92rem;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 92rem;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #84C4F0;
+    opacity: 0.5;
+}
+
+.step-challenge-info {
+    padding-left: 70rem;
+}
+
+.step-challenge-title {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 26rem;
+    line-height: 31rem;
+    text-transform: uppercase;
+}
+
+.step-challenge-title span {
+    color: #84C4F0;
+}
+
+.step-challenge-text {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 16rem;
+    line-height: 20rem;
+    text-transform: uppercase;
+    color: #84C4F0;
+    margin-top: 5rem;
+}
+
+.step-challenge-text span {
+    color: #FDF100;
+}
+
+.halls-videos {
+    margin-bottom: 110rem;
+}
+
+.challenge-tiktok {
+    margin-bottom: 140rem;
+}
+
+.video-holder {
+    position: relative;
+    width: 100%;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: url('../video/play.svg') center no-repeat;
+    cursor: pointer;
+}
+
+.video-overlay.o {
+    background: none;
+}
+
+.challenge-tiktok {
+    margin-bottom: 140rem;
+}
+
+.challenge-slider {
+    margin: 65rem auto 50rem;
+}
+
+.challenge-slider .slick-prev,
+.challenge-slider .slick-next {
+    top: 0;
+    bottom: 0;
+    width: 23rem;
+    height: 54rem;
+}
+
+.challenge-slider .slick-prev {
+    left: 0;
+    background: url(../img/arrow-left.svg) center no-repeat;
+    background-size: contain;
+}
+
+.challenge-slider .slick-next {
+    right: 0;
+    background: url(../img/arrow-right.svg) center no-repeat;
+    background-size: contain;
+}
+
+.challenge-slide-wrapper {
+    max-width: 327rem;
+    width: 100%;
+    margin: auto;
+}
+
+.tiktok-iframe,
+.tiktok-iframe iframe {
+    width: 327rem !important;
+    height: 740rem !important;
+    border-radius: 5rem;
+}
+
+.instagram-iframe,
+.instagram-iframe iframe {
+    width: 327rem;
+    min-width: 326rem !important;
+    height: 380rem;
+}
+
+.challenge-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.challenge-btn-wrapper .btn {
+    max-width: 430rem;
+    height: 70rem;
+    margin-bottom: 35rem;
+    padding: 21rem 0;
+    font-size: 28rem;
+}
+
+.popup__title span {
+    font-size: 20px;
+}
+
+.challengers-popup .filters {
+    flex-direction: column;
+    max-width: 280px;
+    margin: 15px auto 0;
+}
+
+.challengers-popup .date-filter {
+    position: relative;
+    max-width: 280px;
+    width: 100%;
+    margin: 0 auto 15px;
+}
+
+.challengers-popup .date-filter .select {
+    min-width: 240px;
+}
+
+.challengers-popup .date-filter .select2-container--below {
+    z-index: 3;
+}
+
+.challengers-popup .date-filter .select2.select2-container {
+    padding: 20px 10px 20px 35px;
+    background: #84C4F0;
+    transform: skewX(-8deg);
+}
+
+.challengers-popup .date-filter .select2.select2-container--open {
+    border-radius: 0;
+}
+
+.challengers-popup .date-filter .select2.select2-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    bottom: 0;
+    width: 29px;
+    height: 24px;
+    margin: auto;
+    background: url(../img/calendar-icon.svg) center no-repeat;
+    background-size: contain;
+    transform: skewX(8deg);
+}
+
+.challengers-popup .date-filter .select2-container .select2-selection--single {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 0;
+    width: 100%;
+    height: 20px;
+    padding: 0 20px 0 20px;
+    border: 0;
+    border-bottom: 0;
+    box-shadow: none;
+}
+
+.challengers-popup .date-filter .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+}
+
+.challengers-popup .date-filter .select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding-right: 0;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+}
+
+.challengers-popup .date-filter .select2-container--open.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #fff;
+}
+
+.challengers-popup .date-filter .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 0;
+    right: 20px;
+    width: 24px;
+    height: 14px;
+    transition: all .2s linear;
+}
+
+.challengers-popup .date-filter .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: none;
+    width: 24px;
+    height: 14px;
+    background: url(../img/arrow-down-date.svg) center no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+
+.challengers-popup .date-filter .select2-container--open .select2-dropdown--below {
+    padding-top: 0;
+    top: 0;
+    border: transparent;
+    border-radius: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.challengers-popup .date-filter .select2-results__option {
+    position: relative;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    height: 30px;
+    padding: 10px;
+}
+
+.challengers-popup .date-filter .select2-results__options {
+    font-size: 14px;
+}
+
+.challengers-popup .date-filter .select2-container--default .select2-results>.select2-results__options {
+    padding-top: 0;
+}
+
+.challengers-popup .phone-filter {
+    max-width: 270px;
+    margin: 0 auto;
+}
+
+.challengers-popup .phone-filter input:not([type="checkbox"]) {
+    height: 60px;
+    padding-left: 80px;
+    transform: skewX(-8deg);
+}
+
+.challengers-popup .search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    background: url(../img/search.svg) center no-repeat #84C4F0;
+    background-size: auto;
+    transition: all .2s linear;
+    transform: skewX(-8deg);
+}
+
+.challengers-table {
+    max-width: 350px;
+    max-height: 390px;
+    margin: 30px auto;
+}
+
+.challengers-table table {
+    text-align: left;
+}
+
+.challengers-table table td {
+    padding: 10px 10px 10px 0;
+    min-width: 140px;
+}
+
+.challengers-table table td:nth-child(1) {
+    min-width: 46px;
+    text-align: left;
+    color: #84C4F0;
+}
+
+.challengers-table table th {
+    font-size: 13px;
+    text-transform: none;
+    color: #84C4F0;
+    opacity: 0.5;
+}
+
+.challengers-table table tbody {
+    font-size: 16px;
+    line-height: 1;
+    text-transform: none;
+}
+
+.challengers-winner-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 140px;
+    padding-left: 30px;
+    font-size: 15px;
+}
+
+.challengers-winner-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+}
+
+.challengers-winner-link::before {
+    background: url(../img/instagram-icon.png) center no-repeat;
+    background-size: contain;
+}
+
+.challengers-video-link {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+    color: #84C4F0;
 }
 
 .error-title {
@@ -2694,6 +3134,25 @@ header ~ .main-page {
     line-height: 32rem;
     color: #FFE500;
     margin-bottom: 20rem;
+}
+
+@media (max-width: 1366px) {
+    .challenge-slide-wrapper {
+        max-width: 490rem;
+    }
+
+    .tiktok-iframe,
+    .tiktok-iframe iframe {
+        width: 490rem !important;
+        height: 1000rem !important;
+    }
+
+    .instagram-iframe,
+    .instagram-iframe iframe {
+        width: 490rem;
+        min-width: 424rem !important;
+        height: 494rem;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -3885,6 +4344,156 @@ header ~ .main-page {
         font-size: 10px;
     }
 
+    .challenge-page .container {
+        max-width: 400px;
+    }
+
+    .challenge-page .title {
+        margin-bottom: 10px;
+    }
+
+    .challenge-page .title + .challenge-title {
+        font-size: 22px;
+    }
+
+    .challenge-links-block {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 15px auto 0;
+    }
+
+    .challenge-links-block a {
+        margin: 10px auto;
+    }
+
+    .steps-challenge {
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+        max-width: 100%;
+        margin: 20px auto 50px;
+    }
+
+    .step-challenge {
+        max-width: 320px;
+        margin: 0 auto 50px;
+    }
+
+    .step-challenge-img {
+        align-items: flex-start;
+        height: 240px;
+    }
+
+    .step-challenge1 .step-challenge-img {
+        max-width: 214px;
+    }
+
+    .step-challenge2 .step-challenge-img {
+        max-width: 320px;
+    }
+
+    .step-challenge3 .step-challenge-img {
+        max-width: 230px;
+        margin-right: 30px;
+    }
+
+    .step-challenge4 .step-challenge-img {
+        max-width: 188px;
+    }
+
+    .step-challenge-num {
+        top: 195px;
+        width: 40px;
+        height: 76px;
+        font-size: 76px;
+    }
+
+    .step-challenge-info {
+        padding-left: 60px;
+    }
+
+    .step-challenge-title {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .step-challenge-text {
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 10px;
+    }
+
+    .challenge-title.mob {
+        position: relative;
+        padding: 11px 0 9px;
+        font-size: 24px;
+        line-height: 1.1;
+        letter-spacing: 0.01em;
+    }
+
+    .challenge-title.mob::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -500px;
+        right: -500px;
+        bottom: 0;
+        margin: auto;
+        width: 1000px;
+        height: 100%;
+        background: #3C87CD;
+        z-index: 0;
+    }
+
+    .challenge-title.mob span {
+        position: relative;
+    }
+
+    .halls-videos {
+        margin-bottom: 90px;
+    }
+
+    .challenge-tiktok {
+        margin-bottom: 60px;
+    }
+
+    .challenge-slider {
+        margin: 25px auto;
+    }
+
+    .challenge-slider .slick-prev,
+    .challenge-slider .slick-next {
+        top: 0;
+        bottom: 0;
+        width: 17px;
+        height: 38px;
+    }
+
+    .challenge-slide-wrapper {
+        max-width: 320px;
+    }
+
+    .tiktok-iframe,
+    .tiktok-iframe iframe {
+        width: 320px !important;
+        height: 725px !important;
+    }
+
+    .instagram-iframe,
+    .instagram-iframe iframe {
+        width: 320px;
+        min-width: 319px !important;
+        height: 348px;
+    }
+
+    .challenge-btn-wrapper .btn {
+        max-width: 274px;
+        height: 44px;
+        margin-bottom: 25px;
+        padding: 13px 0;
+        font-size: 18px;
+    }
+
     .error-title {
         font-size: 140px;
         line-height: 160px;
@@ -4001,8 +4610,25 @@ header ~ .main-page {
         line-height: 26px;
     }
 
-    .step-title {
+    .step-title,
+    .step-challenge-title {
         font-size: 18px;
         line-height: 22px;
+    }
+
+    .footer-mail {
+        font-size: 11px;
+    }
+
+    .challenge-page .title + .challenge-title {
+        font-size: 19px;
+    }
+
+    .step-challenge3 .step-challenge-img {
+        margin-right: 15px;
+    }
+
+    .challenge-title.mob {
+        font-size: 22px;
     }
 }
