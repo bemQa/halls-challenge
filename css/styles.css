@@ -4494,6 +4494,11 @@ header ~ .main-page {
         font-size: 18px;
     }
 
+    .challengers-popup .phone-filter input:not([type="checkbox"]) {
+        height: 60px !important;
+        padding-left: 80px !important;
+    }
+
     .error-title {
         font-size: 140px;
         line-height: 160px;
