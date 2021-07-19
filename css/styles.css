@@ -2402,8 +2402,12 @@ table .prize-td {
     top: 15rem;
     width: 160rem;
     height: 160rem;
-    background: url(../img/halls-logo.png) center no-repeat;
-    background-size: contain;
+    background: none;
+}
+
+.main-page-logo svg {
+    width: 160rem;
+    height: 160rem;
 }
 
 header ~ .main-page {
@@ -2570,8 +2574,45 @@ header ~ .main-page {
     max-width: 309rem;
 }
 
+.step2 .step-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 256rem;
+    transform: rotate(10.92deg);
+}
+
+.step2 .step-img::after {
+    content: '';
+    position: absolute;
+    top: 20rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 309rem;
+    height: 75rem;
+    background: url(../img/step2-code.svg) center no-repeat;
+    background-size: contain;
+}
+
 .step3 .step-img {
     max-width: 371rem;
+}
+
+.step3 .step-img::after {
+    content: '';
+    position: absolute;
+    top: 60rem;
+    right: 13rem;
+    margin: auto;
+    width: 93rem;
+    height: 119rem;
+    background: url(../img/gif/airpods.gif) center no-repeat;
+    background-size: contain;
 }
 
 .step-num {
@@ -2684,8 +2725,43 @@ header ~ .main-page {
     max-width: 258rem;
 }
 
+.step-challenge1 .step-challenge-img svg {
+    width: 258rem;
+}
+
 .step-challenge2 .step-challenge-img {
     max-width: 408rem;
+}
+
+.step-challenge2 .step-challenge-img::before {
+    content: '';
+    position: absolute;
+    top: 43rem;
+    left: 20rem;
+    width: 183rem;
+    height: 183rem;
+    background: url(../img/gif/tiktok.gif) center no-repeat;
+    background-size: contain;
+    transform: rotate(-21.64deg);
+    z-index: 0;
+}
+
+.step-challenge2 .step-challenge-img img {
+    position: relative;
+    z-index: 1;
+}
+
+.step-challenge2 .step-challenge-img::after {
+    content: '';
+    position: absolute;
+    top: 18rem;
+    right: 0;
+    width: 176rem;
+    height: 158rem;
+    background: url(../img/gif/insta.gif) center no-repeat;
+    background-size: contain;
+    transform: rotate(13.36deg);
+    z-index: 0;
 }
 
 .step-challenge3 .step-challenge-img {
@@ -4320,8 +4396,27 @@ header ~ .main-page {
         max-width: 210px;
     }
 
+    .step2 .step-img img {
+        width: 210px;
+    }
+
+    .step2 .step-img::after {
+        top: 10px;
+        left: -50px;
+        right: -50px;
+        width: 242px;
+        height: 58px;
+    }
+
     .step3 .step-img {
         max-width: 290px;
+    }
+
+    .step3 .step-img::after {
+        top: 45px;
+        right: 10px;
+        width: 77px;
+        height: 98px;
     }
 
     .step-num {
@@ -4390,8 +4485,25 @@ header ~ .main-page {
         max-width: 214px;
     }
 
+    .step-challenge1 .step-challenge-img svg {
+        width: 214px;
+    }
+
     .step-challenge2 .step-challenge-img {
         max-width: 320px;
+    }
+
+    .step-challenge2 .step-challenge-img::before {
+        top: 35px;
+        left: 10px;
+        width: 152px;
+        height: 152px;
+    }
+
+    .step-challenge2 .step-challenge-img::after {
+        top: 18px;
+        width: 146px;
+        height: 131px;
     }
 
     .step-challenge3 .step-challenge-img {
