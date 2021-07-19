@@ -3135,72 +3135,78 @@ header ~ .main-page {
     color: #84C4F0;
 }
 
+.error-page {
+    min-height: calc(100vh - 170rem);
+}
+
 .error-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 750rem;
+    width: 100%;
+    margin: 0 auto 30rem;
     font-style: italic;
-    font-size: 354rem;
-    line-height: 380rem;
+    font-weight: 500;
+    font-size: 292rem;
+    line-height: 1;
     text-align: center;
-    text-transform: uppercase;
-    text-shadow: 5.92511rem -0.987519rem 0rem #000;
-    transform: skewX(-8deg);
 }
 
 .error-desc {
-    max-width: 710rem;
-    width: 100%;
-    margin: 0 auto 40rem;
     font-style: italic;
-    font-size: 61rem;
-    line-height: 73rem;
+    font-weight: 500;
+    font-size: 33rem;
+    line-height: 1;
     text-align: center;
-    text-transform: uppercase;
-    text-shadow: 5.92511rem -0.987519rem 0rem #000;
-    transform: skewX(-8deg);
 }
 
-.error-text {
-    font-style: italic;
-    font-size: 46rem;
-    line-height: 54rem;
-    text-align: center;
-    color: #FFE500;
-    transform: skewX(-8deg);
+.error-desc + .btn-wrapper {
+    margin-top: 40rem;
 }
 
 .cookies-page .container {
     max-width: 1330rem;
-    font-style: italic;
 }
 
 .main-cookie-h1 {
     max-width: 1130rem;
     width: 100%;
-    margin: 60rem auto;
+    margin: 40rem auto 80rem;
+    font-size: 54rem;
+    line-height: 62rem;
 }
 
 .cookies-page p {
-    font-size: 21rem;
-    line-height: 152%;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24rem;
+    line-height: 1;
     margin: 40rem 0;
 }
 
 .main-cookie-h3 {
-    font-size: 30rem;
-    line-height: 32rem;
-    color: #FFE500;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48rem;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: #FDF100;
     margin-bottom: 20rem;
 }
 
 .cookie-text-ul {
-    font-size: 21rem;
-    line-height: 152%;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24rem;
+    line-height: 1;
     padding-left: 50rem;
     list-style: disc;
 }
 
 .cookie-text-ul li {
     margin: 20rem 0;
-    color: #FFE500;
+    color: #FDF100;
 }
 
 .cookie-text-ul li span {
@@ -3208,9 +3214,12 @@ header ~ .main-page {
 }
 
 .main-cookie-h2 {
-    font-size: 30rem;
-    line-height: 32rem;
-    color: #FFE500;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48rem;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: #FDF100;
     margin-bottom: 20rem;
 }
 
@@ -4613,23 +4622,27 @@ header ~ .main-page {
         padding-left: 80px !important;
     }
 
+    .error-page {
+        min-height: 580px;
+    }
+
     .error-title {
+        max-width: 320px;
+        margin-bottom: 20px;
         font-size: 140px;
-        line-height: 160px;
-        text-shadow: 2.3394px -0.3899px 0px #000;
+        line-height: 1;
+    }
+
+    .error-title svg {
+        width: 137px;
     }
 
     .error-desc {
-        max-width: 280px;
-        margin: 0 auto 20px;
-        font-size: 24px;
-        line-height: 29px;
-        text-shadow: 2.3394px -0.3899px 0px #000;
+        font-size: 16px;
     }
 
-    .error-text {
-        font-size: 18px;
-        line-height: 22px;
+    .error-desc + .btn-wrapper {
+        margin-top: 25px;
     }
 
     .cookies-page .container {
