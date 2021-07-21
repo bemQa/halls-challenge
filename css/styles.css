@@ -2355,6 +2355,16 @@ table .prize-td {
     width: 155rem;
 }
 
+.prize-img .airpods-gif {
+    position: absolute;
+    top: 30rem;
+    left: -17rem;
+    right: -14rem;
+    bottom: auto;
+    margin: auto;
+    width: 124rem;
+}
+
 .prize-img .gopro {
     width: 179rem;
 }
