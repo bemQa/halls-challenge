@@ -2357,7 +2357,7 @@ table .prize-td {
 
 .prize-img .airpods-gif {
     position: absolute;
-    top: 30rem;
+    top: 20rem;
     left: -17rem;
     right: -14rem;
     bottom: auto;
@@ -4238,6 +4238,13 @@ header ~ .main-page {
 
     .prize-img .airpods {
         width: 110px;
+    }
+
+    .prize-img .airpods-gif {
+        top: 15px;
+        left: -12px;
+        right: -10px;
+        width: 87px;
     }
 
     .prize-img .gopro {
