@@ -2783,6 +2783,16 @@ header ~ .main-page {
     max-width: 226rem;
 }
 
+.step-challenge4 .step-challenge-img svg {
+    position: absolute;
+    top: 23rem;
+    left: 0;
+    right: 0;
+    width: 200rem;
+    height: 226rem;
+    margin: auto;
+}
+
 .step-challenge-num {
     position: absolute;
     top: 230rem;
@@ -4539,6 +4549,12 @@ header ~ .main-page {
 
     .step-challenge4 .step-challenge-img {
         max-width: 188px;
+    }
+
+    .step-challenge4 .step-challenge-img svg {
+        top: 0;
+        width: 170px;
+        height: 188px;
     }
 
     .step-challenge-num {
