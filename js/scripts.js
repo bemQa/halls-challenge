@@ -122,8 +122,8 @@ $(document).ready(function () {
 
     if($('.select').length > 1) {
         $('select').each(function() {
-            let $this = $(this).not('.select-search');
-            let parent = $(this).not('.select-search').parents('.select');
+            let $this = $(this).not('.select-search, .date-select');
+            let parent = $(this).not('.select-search, .date-select').parents('.select');
             $this.select2({
                 minimumResultsForSearch: Infinity,
                 dropdownParent: parent
@@ -133,6 +133,14 @@ $(document).ready(function () {
             let $this = $(this);
             let parent = $(this).parents('.select');
             $this.select2({
+                dropdownParent: parent
+            });
+        });
+        $('.date-select').each(function() {
+            let $this = $(this);
+            let parent = $(this).parents('.select');
+            $this.select2({
+                minimumResultsForSearch: Infinity,
                 dropdownParent: parent
             });
         });
