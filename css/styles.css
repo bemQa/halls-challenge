@@ -1953,7 +1953,7 @@ footer .container {
 }
 
 .date-filter .select {
-    min-width: 240rem;
+    min-width: 280rem;
 }
 
 .date-filter .select2-container--below {
@@ -1961,6 +1961,7 @@ footer .container {
 }
 
 .date-filter .select2.select2-container {
+    width: 100% !important;
     padding: 20rem 10rem 20rem 35rem;
     background: #84C4F0;
     transform: skewX(-8deg);
@@ -3025,7 +3026,7 @@ header ~ .main-page {
 }
 
 .challengers-popup .date-filter .select {
-    min-width: 240px;
+    min-width: 280px;
 }
 
 .challengers-popup .date-filter .select2-container--below {
