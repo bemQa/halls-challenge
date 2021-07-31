@@ -508,7 +508,7 @@ body {
 }
 
 .video-js .vjs-big-play-button {
-    display: none;
+    display: none !important;
 }
 
 .video-js .vjs-control-bar {
@@ -531,6 +531,11 @@ body {
     width: 100%;
     height: 100%;
     z-index: 10;
+    background: url('../video/play.svg') center no-repeat;
+    cursor: pointer;
+}
+
+.block3 .video-overlay {
     background: url('../video/play.svg') center no-repeat;
     cursor: pointer;
 }
@@ -624,7 +629,7 @@ video::-webkit-media-controls-current-time-display{
     height: 100%;
 }
 
-.breathe::before {
+.breathe.animate::before {
     content: '';
     position: absolute;
     top: 0;
@@ -670,7 +675,8 @@ video::-webkit-media-controls-current-time-display{
     z-index: 1;
 }
 
-.arrows-360 {
+.arrows-360,
+.arrows-360-2 {
     position: absolute;
     bottom: 160rem;
     left: 0;
@@ -716,6 +722,71 @@ video::-webkit-media-controls-current-time-display{
 .block2 .video-holder,
 .block3 .video-holder {
     height: 100vh;
+}
+
+.play-video360-2 {
+    position: absolute;
+    bottom: 125rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 22rem;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 22rem;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2rem 1.5rem 0rem #063485;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.play-video360-2::before {
+    content: '';
+    position: absolute;
+    top: -168rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 140rem;
+    height: 140rem;
+    background: url(../video/play2.svg) center no-repeat;
+    background-size: contain;
+}
+
+.play-video360-2::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.block2-5 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: url(../img/mobile/bg.jpg) center no-repeat;
+    background-size: cover;
+    z-index: 5;
+    opacity: 1;
+    transition: all .2s linear;
+}
+
+.block2-5.z1 {
+    z-index: 1;
+    opacity: 0;
 }
 
 .block3 {
@@ -914,8 +985,8 @@ video::-webkit-media-controls-current-time-display{
 
 .video-slider .slick-prev,
 .video-slider .slick-next {
-    top: auto;
-    bottom: 20rem;
+    top: 0;
+    bottom: -500rem;
     width: 23rem;
     height: 52rem;
     z-index: 2;
@@ -949,15 +1020,7 @@ video::-webkit-media-controls-current-time-display{
 @media (max-width: 640px) {
     html,
     body {
-        font-size: calc(100vw / 375);
-        height: 100%;
-    }
-}
-
-@media (max-width: 360px) {
-    html,
-    body {
-        font-size: calc(100vw / 520);
+        font-size: calc(43vh / 375);
         height: 100%;
     }
 }
