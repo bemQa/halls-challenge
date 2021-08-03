@@ -21,7 +21,7 @@ $(document).ready(function () {
             if(document.location.search.substr(1).split('&').indexOf('global=paused')>=0)ks.globalPause()})(KeyshapeJS);
 
             
-        }, 1600);
+        }, 5500);
         
         setTimeout(function() {
             audio.pause();
@@ -35,7 +35,7 @@ $(document).ready(function () {
             setTimeout(function() {
                 $('.go-to-block2').removeClass('hide');
             }, 6000);
-        }, 9800);
+        }, 14100);
     });
 
     $('.arrows-360').on('click', function() {
@@ -102,8 +102,9 @@ $(document).ready(function () {
         $('.btn-breathe').on('click', function() {
             setTimeout(function() {
                 player.play();
+                //vr.camera.position.setY(6.123233995736766);
                 player.volume = 0.1;
-            }, 9800);
+            }, 14100);
         });
 
         $('.go-to-block2').one('click', function() {
@@ -124,11 +125,11 @@ $(document).ready(function () {
         }, 10000);
     });
 
-    (function(window, videojs) {
+    (function(window, videojs2) {
 
-        var player = window.player = videojs('videojs-vr-player2', {}, function () {
+        var player2 = window.player2 = videojs('videojs-vr-player2', {}, function () {
             window.addEventListener("resize", function () {
-                var canvas = player.getChild('Canvas');
+                var canvas = player2.getChild('Canvas');
                 if(canvas) canvas.handleResize();
             });
         });
@@ -136,25 +137,28 @@ $(document).ready(function () {
         var width = window.innerWidth;
         var height = window.innerHeight;
 
-        player.mediainfo = player.mediainfo || {};
-        player.mediainfo.projection = '360';
+        player2.mediainfo = player2.mediainfo || {};
+        player2.mediainfo.projection = '360';
 
-        player.width(width), player.height(height);
+        player2.width(width), player2.height(height);
 
         // AUTO is the default and looks at mediainfo
-        var vr = window.vr = player.vr({
+        var vr2 = window.vr2 = player2.vr({
             projection: 'AUTO', 
             forceCardboard: false, 
             motionControls: true
         });
 
         $('.play-video360-2').on('click', function() {
-            player.play();
-            player.volume = 0.1;
+            player2.play();
+            vr2.camera.position.setX(0);
+            vr2.camera.position.setY(6.123233995736766);
+            vr2.camera.position.setZ(0);
+            player2.volume = 0.1;
         });
 
         $('.go-to-block3').on('click', function() {
-            player.pause();
+            player2.pause();
 
             $('.block3').fadeIn();
             var video3 = $('.video3').get(0);
@@ -178,7 +182,7 @@ $(document).ready(function () {
             //     $('.block4').fadeIn();
             // }, video3_duration);
         });
-    }(window, window.videojs));
+    }(window, window.videojs2));
 
     $('.go-to-block5').click(function(e) {
         e.preventDefault();
