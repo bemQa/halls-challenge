@@ -102,8 +102,8 @@ $(document).ready(function () {
         $('.btn-breathe').on('click', function() {
             setTimeout(function() {
                 player.play();
-                //vr.camera.position.setY(6.123233995736766);
                 player.volume = 0.1;
+                vr.camera.position.setY(0);
             }, 14100);
         });
 
@@ -151,10 +151,8 @@ $(document).ready(function () {
 
         $('.play-video360-2').on('click', function() {
             player2.play();
-            vr2.camera.position.setX(0);
-            vr2.camera.position.setY(6.123233995736766);
-            vr2.camera.position.setZ(0);
             player2.volume = 0.1;
+            vr.camera.position.setY(0);
         });
 
         $('.go-to-block3').on('click', function() {
