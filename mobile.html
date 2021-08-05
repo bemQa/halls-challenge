@@ -93,7 +93,7 @@
 						</svg>
 					<div class="preloader-title">Загружается <br>halls момент</div>
 				</div>
-				<div class="block1" >
+				<div class="block1 park"><!-- для второго видео давать класс paraplan -->
 					<!-- 360* видео на фоне -->
 					<div class="video-holder">
 						<video id="videojs-vr-player" class="video-js vjs-default-skin" poster="video/poster-park.jpg" crossorigin="anonymous" preload="auto" loop="true" controls playsinline>
@@ -104,8 +104,9 @@
 						<div class="block1-title btn-breathe">Запустить</div>
 					</div>
 					<div class="breathe hide">
+						<div class="freeze"></div>
 						<audio id="breathe-song">
-							<source src="audio/breathe.mp3">
+							<source src="audio/breathe.mp3" preload="auto">
 						</audio>
 						<div class="volume"></div>
 						<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 640 640" class="logo-breathe1" style="white-space: pre;">
