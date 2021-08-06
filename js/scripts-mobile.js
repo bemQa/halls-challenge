@@ -20,11 +20,11 @@ $(document).ready(function () {
             if(document.location.search.substr(1).split('&').indexOf('global=paused')>=0)ks.globalPause()})(KeyshapeJS);
 
             
-        }, 5500);
+        }, 2500);
 
         setTimeout(function() {
             $('.breathe').addClass('animate');
-        }, 7000);
+        }, 4000);
         
         setTimeout(function() {
             audio.pause();
@@ -38,7 +38,7 @@ $(document).ready(function () {
             setTimeout(function() {
                 $('.go-to-block2').removeClass('hide');
             }, 6000);
-        }, 15200);
+        }, 12200);
     });
 
     $('.arrows-360').on('click', function() {
@@ -107,7 +107,7 @@ $(document).ready(function () {
                 player.play();
                 player.volume = 0.1;
                 vr.camera.position.setY(0);
-            }, 15200);
+            }, 12200);
         });
 
         $('.go-to-block2').one('click', function() {
