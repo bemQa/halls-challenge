@@ -66,7 +66,9 @@ $(document).ready(function () {
                 $('.preloader2').fadeIn();
                 $('.block2').remove();
                 // $('.block2-5').delay(3000).fadeIn();
-                $('.block2-5').delay(3000).removeClass('z1');
+                setTimeout(function() {
+                    $('.block2-5').removeClass('z1');
+                }, 4000)
             }, video2_duration);
         }, 500);
         
