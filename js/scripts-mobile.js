@@ -27,6 +27,7 @@ $(document).ready(function () {
         }, 4000);
         
         setTimeout(function() {
+            window.dataLayer.push({'event':'event2'});
             audio.pause();
             $('.breathe').addClass('hide');
             $('.arrows-360').removeClass('hide');
@@ -54,6 +55,7 @@ $(document).ready(function () {
         $('.block2').fadeIn();
         // таймер запуска видео2 после появления блока2
         setTimeout(function() {
+            window.dataLayer.push({'event':'event3'});
             $('.block1').remove();
             var video2 = $('.video2').get(0);
             var video2_duration = video2.duration * 1000;
