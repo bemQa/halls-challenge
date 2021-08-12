@@ -3,6 +3,10 @@ $(document).ready(function () {
         $('.preloader').delay(500).fadeToggle(500);
     });
 
+    $('.event1').click(function() {
+        window.dataLayer.push({'event':'event1'});
+    });
+
     $('.btn-breathe').on('click', function() {
         $(this).parent().addClass('hide');
         $('.breathe').removeClass('hide');
@@ -27,7 +31,11 @@ $(document).ready(function () {
         }, 4000);
         
         setTimeout(function() {
-            window.dataLayer.push({'event':'event2'});
+            $('.event1').addClass('event2');
+            $('.event2').removeClass('event1');
+            $('.event2').click(function() {
+                window.dataLayer.push({'event':'event2'});
+            });
             audio.pause();
             $('.breathe').addClass('hide');
             $('.arrows-360').removeClass('hide');
@@ -37,6 +45,11 @@ $(document).ready(function () {
             });
 
             setTimeout(function() {
+                $('.event2').addClass('event3');
+                $('.event3').removeClass('event2');
+                $('.event3').click(function() {
+                    window.dataLayer.push({'event':'event3'});
+                });
                 $('.go-to-block2').removeClass('hide');
             }, 6000);
         }, 12200);
@@ -55,7 +68,6 @@ $(document).ready(function () {
         $('.block2').fadeIn();
         // таймер запуска видео2 после появления блока2
         setTimeout(function() {
-            window.dataLayer.push({'event':'event3'});
             $('.block1').remove();
             var video2 = $('.video2').get(0);
             var video2_duration = video2.duration * 1000;
