@@ -3219,8 +3219,13 @@ header ~ .main-page {
     height: 18px;
 }
 
-.challengers-winner-link::before {
+.challengers-winner-link.instagram::before {
     background: url(../img/instagram-icon.png) center no-repeat;
+    background-size: contain;
+}
+
+.challengers-winner-link.tiktok::before {
+    background: url(../img/tiktok-icon.png) center no-repeat;
     background-size: contain;
 }
 
