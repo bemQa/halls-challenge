@@ -1633,6 +1633,14 @@ footer .container {
     color: #84C4F0;
 }
 
+.lk-code-code2 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16rem;
+    line-height: 1;
+    color: #84C4F0;
+}
+
 .lk-code-win .lk-code-link {
     color: #fff;
 }
@@ -3902,7 +3910,7 @@ header ~ .main-page {
 
     .lk-code {
         max-width: 340px;
-        height: 188px;
+        height: 194px;
         margin: 5px auto;
         padding: 12px 15px 10px;
     }
@@ -3963,11 +3971,15 @@ header ~ .main-page {
 
     .lk-code-name {
         font-size: 16px;
-        margin-bottom: 6px;
+        margin-bottom: 4px;
     }
 
     .lk-code-code {
         font-size: 16px;
+    }
+
+    .lk-code-code2 {
+        font-size: 13px;
     }
 
     .profile {
