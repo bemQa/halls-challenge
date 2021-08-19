@@ -1636,7 +1636,7 @@ footer .container {
 .lk-code-code2 {
     font-style: italic;
     font-weight: 500;
-    font-size: 16rem;
+    font-size: 17rem;
     line-height: 1;
     color: #84C4F0;
 }
@@ -3910,7 +3910,7 @@ header ~ .main-page {
 
     .lk-code {
         max-width: 340px;
-        height: 194px;
+        height: 188px;
         margin: 5px auto;
         padding: 12px 15px 10px;
     }
