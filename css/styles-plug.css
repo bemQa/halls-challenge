@@ -451,6 +451,7 @@ body {
 @media (max-width: 420px) {
     .plug-block {
         height: 50vh;
+        height: calc(var(--vh, 1vh) * 50);
     }
 
     .plug-logo-breathe {
