@@ -457,10 +457,13 @@ body {
     .plug-logo-breathe {
         top: -3vh;
         width: 27vh;
+        width: calc(var(--vh, 1vh) * 27);
         height: 27vh;
+        height: calc(var(--vh, 1vh) * 27);
     }
 
     .plug-btn-wrapper {
         top: 42vh;
+        top: calc(var(--vh, 1vh) * 42);
     }
 }
