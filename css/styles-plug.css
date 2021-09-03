@@ -363,7 +363,8 @@ body {
 .plug-block {
     position: relative;
     width: 100%;
-    height: 406rem;
+    /*height: 406rem;*/
+    height: 50vh;
     background: #00155B;
 }
 
@@ -385,19 +386,23 @@ body {
 
 .plug-logo-breathe {
     position: absolute;
-    top: -30rem;
+    /*top: -30rem;*/
+    top: -3vh;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 214rem;
-    height: 214rem;
+    /*width: 214rem;
+    height: 214rem;*/
+    width: 27vh;
+    height: 27vh;
     z-index: 1;
 }
 
 .plug-btn-wrapper {
     position: absolute;
-    top: 340rem;
+    /*top: 340rem;*/
+    top: 42vh;
     left: 0;
     right: 0;
     margin: auto;
@@ -441,4 +446,20 @@ body {
     background: url(../img/plug-kv.png) center no-repeat;
     background-size: cover;
     z-index: 0;
+}
+
+@media (max-width: 420px) {
+    .plug-block {
+        height: 50vh;
+    }
+
+    .plug-logo-breathe {
+        top: -3vh;
+        width: 27vh;
+        height: 27vh;
+    }
+
+    .plug-btn-wrapper {
+        top: 42vh;
+    }
 }
