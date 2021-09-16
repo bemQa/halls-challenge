@@ -2519,8 +2519,32 @@ header ~ .main-page {
 }
 
 .main-block {
+    position: relative;
     display: flex;
     margin-bottom: 140rem;
+}
+
+.arrow-anchor {
+    position: absolute;
+    bottom: 65rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 51rem;
+    height: 92rem;
+    background: url(../img/arrow-anchor.svg) center no-repeat;
+    background-size: contain;
+    animation: arrow-anchor 2s infinite ease-out;
+}
+
+@keyframes arrow-anchor {
+    0%, 100% {
+        bottom: 65rem;
+    }
+
+    50% {
+        bottom: 35rem;
+    }
 }
 
 .kv {
