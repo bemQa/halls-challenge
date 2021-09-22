@@ -2526,7 +2526,23 @@ header ~ .main-page {
 
 .arrow-anchor {
     position: absolute;
-    bottom: 65rem;
+    bottom: 115rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100rem;
+    height: 14rem;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.arrow-anchor::before {
+    content: '';
+    position: absolute;
+    bottom: -65rem;
     left: 0;
     right: 0;
     margin: auto;
@@ -2539,11 +2555,11 @@ header ~ .main-page {
 
 @keyframes arrow-anchor {
     0%, 100% {
-        bottom: 65rem;
+        bottom: -65rem;
     }
 
     50% {
-        bottom: 35rem;
+        bottom: -85rem;
     }
 }
 
@@ -2582,19 +2598,32 @@ header ~ .main-page {
     z-index: 0;
 }
 
+.kv-date {
+    position: absolute;
+    top: 580rem;
+    left: -130rem;
+    right: 0;
+    margin: auto;
+    width: 491rem;
+    height: 46rem;
+    background: url(../img/kv-date.png) center no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
 .kv-info {
     position: relative;
     width: 710rem;
-    margin-top: 120rem;
+    margin-top: 200rem;
 }
 
 .main-prize-info {
-    margin-bottom: 90rem;
+    margin-bottom: 50rem;
 }
 
 .main-prize-title {
     position: relative;
-    margin-bottom: 25rem;
+    margin-bottom: 40rem;
     padding-top: 92rem;
     font-style: italic;
     font-weight: 900;
@@ -2622,10 +2651,14 @@ header ~ .main-page {
 .main-prize-text {
     font-style: italic;
     font-weight: 900;
-    font-size: 53rem;
-    line-height: 61rem;
+    font-size: 38rem;
+    line-height: 48rem;
     text-align: center;
     text-transform: uppercase;
+}
+
+.main-prize-text span {
+    color: #FDF100;
 }
 
 .code-block {
@@ -2664,7 +2697,7 @@ header ~ .main-page {
     justify-content: space-between;
     max-width: 1560rem;
     width: 100%;
-    margin: 0 auto 50rem;
+    margin: 0 auto 100rem;
 }
 
 .step {
@@ -2764,9 +2797,18 @@ header ~ .main-page {
     color: #84C4F0;
 }
 
+.step-date {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 22rem;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #FDF100;
+}
+
 .action-remark {
     position: absolute;
-    bottom: -100rem;
+    bottom: -150rem;
     left: 80rem;
     font-style: italic;
     font-weight: normal;
@@ -3354,6 +3396,10 @@ header ~ .main-page {
     letter-spacing: 0.05em;
     color: #FDF100;
     margin-bottom: 20rem;
+}
+
+.main-prizes-block {
+    position: relative;
 }
 
 @media (max-width: 1366px) {
@@ -4490,6 +4536,13 @@ header ~ .main-page {
         height: 368px;
     }
 
+    .kv-date {
+        top: 165px;
+        left: 0;
+        width: 256px;
+        height: 24px;
+    }
+
     .kv-info {
         display: flex;
         flex-direction: column;
@@ -4559,8 +4612,8 @@ header ~ .main-page {
 
     .main-prize-text {
         position: relative;
-        font-size: 23px;
-        line-height: 31px;
+        font-size: 22px;
+        line-height: 30px;
     }
 
     .steps {
@@ -4623,6 +4676,10 @@ header ~ .main-page {
     .step-title {
         font-size: 22px;
         line-height: 26px;
+    }
+
+    .step-date {
+        font-size: 16px;
     }
 
     .action-remark {
@@ -4924,8 +4981,12 @@ header ~ .main-page {
         font-size: 13px;
     }
 
+    .main-prize-title {
+        font-size: 22px;
+    }
+
     .main-prize-text {
-        font-size: 19px;
+        font-size: 18px;
         line-height: 26px;
     }
 
