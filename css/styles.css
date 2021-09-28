@@ -2280,6 +2280,15 @@ table .prize-td {
     text-align: center;
 }
 
+.winner-challenge-period {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24rem;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 20rem;
+}
+
 .winner-challenge-img {
     position: relative;
     max-width: 293rem;
@@ -4302,6 +4311,11 @@ header ~ .main-page {
 
     .winner-challenge {
         max-width: 300px;
+    }
+
+    .winner-challenge-period {
+        font-size: 16px;
+        margin-bottom: 15px;
     }
 
     .winner-challenge-img {
