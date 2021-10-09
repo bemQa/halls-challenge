@@ -2702,17 +2702,24 @@ header ~ .main-page {
 
 .steps {
     position: relative;
-    display: flex;
-    justify-content: space-between;
     max-width: 1560rem;
     width: 100%;
     margin: 0 auto 100rem;
+}
+
+.steps-line {
+    display: flex;
+    justify-content: space-between;
 }
 
 .step {
     position: relative;
     max-width: 430rem;
     width: 100%;
+}
+
+.step4 {
+    margin: 100rem auto 0;
 }
 
 .step-img {
@@ -2773,6 +2780,62 @@ header ~ .main-page {
     height: 119rem;
     background: url(../img/gif/airpods.gif) center no-repeat;
     background-size: contain;
+}
+
+.step4 .step-img {
+    max-width: 371rem;
+    image-rendering: optimizequality;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.step4 .step-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 375rem;
+    height: 375rem;
+    background: #003DB8;
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.step4 .step-img img {
+    position: absolute;
+    left: -80rem;
+}
+
+.step4 .step-img::after {
+    content: '';
+    position: absolute;
+    top: 40rem;
+    right: -30rem;
+    margin: auto;
+    width: 182rem;
+    height: 116rem;
+    background: url(../img/prizes/oz_10000.png) center no-repeat;
+    background-size: contain;
+    filter: drop-shadow(0px -3px 48px rgba(91, 197, 242, 0.4));
+    transform: rotate(20.22deg);
+}
+
+.step4 .step-num,
+.step4 .step-info,
+.step4 .btn-wrapper {
+    z-index: 1;
+}
+
+.step4 .step-info,
+.step4 .btn-wrapper {
+    position: relative;
+}
+
+.step4 .step-title span {
+    display: block;
+    margin: 10rem -120rem;
 }
 
 .step-num {
@@ -3409,6 +3472,73 @@ header ~ .main-page {
 
 .main-prizes-block {
     position: relative;
+}
+
+.tooltip {
+    position: fixed;
+    top: 170rem;
+    right: 0;
+    width: 371rem;
+    height: 457rem;
+    background: url(../img/tooltip.png) center no-repeat;
+    background-size: contain;
+    z-index: 3;
+}
+
+.close-tooltip {
+    position: absolute;
+    top: 20rem;
+    left: 158rem;
+    width: 31rem;
+    height: 22rem;
+    background: url(../img/close-popup.svg) center no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+.close-tooltip:hover {
+    transform: scale(1.1);
+}
+
+.tooltip-btn {
+    position: absolute;
+    top: 320rem;
+    right: 38rem;
+    max-width: 170rem;
+    height: 32rem;
+    padding: 9rem 0 8rem;
+    font-size: 15rem;
+}
+
+.banner-popup {
+    position: relative;
+    width: 726px;
+    height: 726px;
+    background: url(../img/banner-popup.png) center no-repeat;
+    background-size: contain;
+}
+
+.banner-popup .close-popup {
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.banner-popup .popup-banner-btn {
+    position: absolute;
+    top: 526px;
+    left: 0;
+    right: -50px;
+    margin: auto;
+    max-width: 310px;
+    height: 64px;
+    padding: 30px 0;
+    font-size: 28px;
+}
+
+.popup.pt5 {
+    padding-top: 5%;
 }
 
 @media (max-width: 1366px) {
@@ -4631,6 +4761,10 @@ header ~ .main-page {
     }
 
     .steps {
+        
+    }
+
+    .steps-line {
         flex-direction: column;
         -ms-align-items: center;
         align-items: center;
@@ -4674,6 +4808,32 @@ header ~ .main-page {
         right: 10px;
         width: 77px;
         height: 98px;
+    }
+
+    .step4 .step-img {
+        max-width: 260px;
+    }
+
+    .step4 .step-img::before {
+        right: -50px;
+        width: 375px;
+        height: 375px;
+    }
+
+    .step4 .step-img img {
+        top: 20px;
+        left: -50px;
+    }
+
+    .step4 .step-img::after {
+        top: 60px;
+        right: -15px;
+        width: 126px;
+        height: 80px;
+    }
+
+    .step4 .step-title span {
+        margin: 10px -70px;
     }
 
     .step-num {
@@ -4929,6 +5089,56 @@ header ~ .main-page {
     .main-cookie-h2 {
         font-size: 21px;
         line-height: 28px;
+    }
+
+    .tooltip {
+        top: 100px;
+        width: 256px;
+        height: 332px;
+        background: url(../img/tooltip-mob.png) center no-repeat;
+        background-size: contain;
+    }
+
+    .close-tooltip {
+        top: 20px;
+        left: 120px;
+        width: 22px;
+        height: 15px;
+    }
+
+    .tooltip-btn {
+        top: 225px;
+        right: 49px;
+        max-width: 144px;
+        height: 28px;
+        padding: 7px 0;
+        font-size: 14px;
+    }
+
+    .banner-popup {
+        position: absolute;
+        left: -100px;
+        right: -100px;
+        margin: auto;
+        width: 456px;
+        height: 456px;
+        background: url(../img/banner-popup-mob.png) center no-repeat;
+        background-size: contain;
+        image-rendering: optimizequality;
+        image-rendering: -webkit-optimize-contrast;
+    }
+
+    .banner-popup .close-popup {
+        width: 26px;
+        height: 20px;
+    }
+
+    .banner-popup .popup-banner-btn {
+        top: 320px;
+        max-width: 170px;
+        height: 32px;
+        padding: 9px 0 8px;
+        font-size: 15px;
     }
 }
 
